@@ -18,12 +18,16 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Conv2D(128, kernel_size=3, activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
+# model.add(Conv2D(256, kernel_size=3, activation='relu'))
+# model.add(MaxPooling2D(pool_size=(2, 2)))
+
 model.add(Flatten())
 
-model.add(Dropout(rate=0.5))
+model.add(Dropout(rate=0.1))
 
-model.add(Dense(10, activation='relu'))
-
+# model.add(Dense(64, activation='relu'))
+# model.add(Dense(10, activation='relu'))
+model.add(Dense(5, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 
 # Then, call model.compile()
