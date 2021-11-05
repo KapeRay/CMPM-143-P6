@@ -21,7 +21,7 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
 model.add(Dense(10, activation='relu'))
 
-model.add(Dense(5, activation='sigmoid'))
+model.add(Dense(1, activation='sigmoid'))
 
 # Then, call model.compile()
 model.compile(
@@ -31,7 +31,7 @@ model.compile(
 )
 
 # Shows the model summary
-# model.summary()
+model.summary()
 
 # Finally, train this compiled model by running:
 # python train.py
