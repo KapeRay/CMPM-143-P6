@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0369f624-5f8f-42b4-afaf-135e1130d721" name="Changes" comment="" />
+    <list default="true" id="0369f624-5f8f-42b4-afaf-135e1130d721" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/p6_cats_and_dogs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/p6_cats_and_dogs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/basic_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/basic_model.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20KMtC95Lajcnl4PpxwCi4DGMFz" />
   <component name="ProjectViewState">
