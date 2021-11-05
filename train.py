@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from tensorflow import keras
 # TODO Student: update basic_model -> dropout_model to change which model gets trained
+# from p6_deep_learning.models.basic_model import model
 from models.basic_model import model
 from preprocess import train_generator, validation_generator
 
