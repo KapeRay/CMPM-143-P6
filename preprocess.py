@@ -9,13 +9,13 @@ validation_dir = 'cats_and_dogs_small/validation/'
 # Rescale all images from the [0...255] range to the [0...1] range
 train_datagen = ImageDataGenerator(
     rescale=1./255,
-    # width_shift_range=0.2,
-    # height_shift_range=0.2,
-    # shear_range=0.2,
-    # zoom_range=[0.5, 1.0],
-    rotation_range=30,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    rotation_range=40,
     # fill_mode='nearest',
-    # horizontal_flip=True,
+    horizontal_flip=True,
     # vertical_flip=True,
     # brightness_range=[0.2, 1.0],
     )

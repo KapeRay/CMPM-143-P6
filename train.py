@@ -18,8 +18,8 @@ history = model.fit_generator(
 
 # Save the model weights
 # Change the name of this file to avoid overwriting previously trained models
-# model.save('cats_and_dogs_small_1.h5')
-model.save('cats_and_dogs_small_2.h5')
+# model.save('cats_and_dogs_small_1.h5')    # for basic
+model.save('cats_and_dogs_small_2.h5')  # for dropout
 
 
 # Plot the  loss and accuracy over the training run
