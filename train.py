@@ -12,7 +12,7 @@ from preprocess import train_generator, validation_generator
 history = model.fit_generator(
     train_generator,
     steps_per_epoch=100,
-    epochs=30,
+    epochs=40,  # 30
     validation_data=validation_generator,
     validation_steps=50)
 

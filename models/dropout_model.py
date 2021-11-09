@@ -13,10 +13,10 @@ model.add(Conv2D(32, kernel_size=4, activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
 model.add(Conv2D(64, kernel_size=5, activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(MaxPooling2D(pool_size=5))
 
-model.add(Conv2D(128, kernel_size=6, activation='relu'))
-model.add(MaxPooling2D(pool_size=(5, 5)))
+# model.add(Conv2D(128, kernel_size=6, activation='relu'))
+# model.add(MaxPooling2D(pool_size=(5, 5)))
 
 # model.add(Conv2D(256, kernel_size=3, activation='relu'))
 # model.add(MaxPooling2D(pool_size=(2, 2)))
