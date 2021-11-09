@@ -31,7 +31,7 @@ model.compile(
 )
 
 # Shows the model summary
-model.summary()
+#model.summary()
 
 # Finally, train this compiled model by running:
 # python train.py
