@@ -1,6 +1,7 @@
 from tensorflow.keras import models
 from tensorflow.keras import layers
 from tensorflow.keras import optimizers
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 import numpy as np
 
 # Load the features you created in feature_extraction.py
@@ -13,15 +14,28 @@ test_labels = np.load("results/test_labels.npy")
 
 # Train the classifier from the features
 model = models.Sequential()
-# TODO Student - define the model architecture
 
-history = model.fit(
-    train_features,
-    train_labels,
-    epochs=30,
-    batch_size=20,
-    validation_data=(validation_features, validation_labels)
+model.add(Dense(64, activation='relu', input_shape=(None, 2000, 8192)))
+model.add(Dropout(rate=0.5))
+
+model.add(Dense(64, activation='relu'))
+
+model.add(Dense(1, activation='sigmoid'))
+
+model.compile(
+    loss='binary_crossentropy',
+    optimizer=optimizers.RMSprop(lr=1e-4),
+    metrics=['acc']
 )
+
+model.summary()
+
+history = model.fit(train_features, train_labels,
+                    epochs=30,
+                    batch_size=20,
+                    validation_data=(validation_features, validation_labels))
+
+model.save('feature_extraction_cats_and_dogs.h5')
 
 # Plot the results
 import matplotlib.pyplot as plt
